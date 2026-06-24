@@ -1,0 +1,127 @@
+#aboutme {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+    background-color: var(--color-primary-3);
+    padding: 80px 8%;
+}
+
+/* ── Foto ── */
+.aboutme-photo-wrap {
+    flex-shrink: 0;
+    width: 600px;
+    height: 600px;
+}
+
+.aboutme-circle {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--color-primary-1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.aboutme-circle img {
+    width: 108%;
+    height: 108%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+/* ── Conteúdo ── */
+.aboutme-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 500px;
+}
+
+.aboutme-content .section-title {
+    color: var(--color-primary-1);
+    opacity: 0.8;
+}
+
+.aboutme-content .section-subtitle {
+    font-size: 2.8rem;
+    color: var(--color-primary-1);
+    line-height: 1.2;
+}
+
+.aboutme-content .section-subtitle span {
+    color: var(--color-primary-1);
+    font-style: italic;
+}
+
+.aboutme-description {
+    font-size: 1rem;
+    color: var(--color-primary-1);
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+/* Stats */
+.aboutme-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 8px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-number {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-primary-2);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--color-primary-1);
+    opacity: 0.7;
+}
+
+/* ── Responsivo ── */
+@media screen and (max-width: 1100px) {
+    #aboutme {
+        flex-direction: column;
+        gap: 48px;
+        text-align: center;
+    }
+
+    .aboutme-photo-wrap {
+        width: 300px;
+        height: 300px;
+    }
+
+    .aboutme-content {
+        align-items: center;
+    }
+
+    .aboutme-stats {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutme-photo-wrap {
+        width: 220px;
+        height: 220px;
+    }
+
+    .aboutme-content .section-subtitle {
+        font-size: 2rem;
+    }
+
+    .aboutme-stats {
+        gap: 28px;
+    }
+}
