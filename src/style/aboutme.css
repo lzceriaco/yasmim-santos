@@ -113,8 +113,7 @@
 
 @media screen and (max-width: 500px) {
     .aboutme-photo-wrap {
-        width: 220px;
-        height: 220px;
+        display: none;
     }
 
     .aboutme-content .section-subtitle {
